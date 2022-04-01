@@ -27,7 +27,7 @@ jobs:
         with:
           scope: subscription
           subscriptionID: 7f585b1b-813a-4788-b8e1-e14ee35cfc44
-          region: eastus
+          region: Central US 
           template: ./arm-templates/resourcegroup.json
           deploymentName: rg-githubactions
 
