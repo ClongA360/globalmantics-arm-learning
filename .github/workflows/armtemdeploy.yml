@@ -4,6 +4,9 @@ name: armTemplateDeployment
 
 # Controls when the workflow will run
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -14,5 +17,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-    
+      - name: Deploy Resource Group rg-githubactions with AZ CLI
+        uses: Azure/cli@v1
+        with:
+          inlinescript: |
+            az deployment sub create --location "US East" --template-file ./arm-templates/resourcegroup.json
+
      
