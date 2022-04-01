@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccountName": {
-            "value": "globostg0011" 
+            "value": "globostg00101" 
         },
         "location": {
             "value": "Central US"
